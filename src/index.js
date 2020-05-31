@@ -1,17 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from  'react';
+import ReactDom from 'react-dom';
+import App from "./App";
+ReactDom.render(<App/>,document.getElementById('root'));
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// class Animal{
+//     constructor(name, age){
+//         this.name=name;
+//         this.age=age;
+//     }
+//     speak(){
+//         console.log("I am",this.name,"My age",this.age);
+//     }
+// }
+// const lion =new Animal("Prem",21);
+// lion.speak();
+// console.log(lion);
+// class ex extends Animal{
+//     constructor(name,age,color, speed){
+//         super(name,age);
+//         this.color=color;
+//         this.speed=speed;
+//     }
+//     roar(){
+//         console.log("My name",this.name,"fur color",this.color )
+//     }
+// }
+// const example =new ex("Prem",21,"gold",20);
+// example.roar();
+// example.speak();
