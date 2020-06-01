@@ -1,4 +1,6 @@
 import React,{Component} from 'react';
+import Projects from './/Projects'
+
 class App extends Component{
     constructor(){
         super();
@@ -32,6 +34,8 @@ class App extends Component{
                 </div>:null
            }
            <button onClick={this.toggleshowbio}>{this.state.message}</button>
+           <hr/>
+           <Projects/>
            </div>
         )
     }
